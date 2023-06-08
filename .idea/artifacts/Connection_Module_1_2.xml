@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Connection Module 1.2">
+    <output-path>$PROJECT_DIR$/out/artifacts/Connection_Module_1_2</output-path>
+    <root id="archive" name="Connection Module 1.2.jar">
+      <element id="library" level="project" name="lib" />
+      <element id="module-output" name="Database Connection Module" />
+    </root>
+  </artifact>
+</component>
