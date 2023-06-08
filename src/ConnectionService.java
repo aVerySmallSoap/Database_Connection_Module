@@ -18,7 +18,11 @@ public class ConnectionService implements Connector {
     @Override
     public Connection getConnection(String URL, String user, String pass){
         try{
+            if((user == null || user.equals("")) && (pass == null || pass.equals(""))){
+                return DriverManager.getConnection(URL, "root", "root");
+            }else{
             return DriverManager.getConnection(URL, user, pass);
+            }
         }catch (SQLException e){
             throw new RuntimeException(e.getMessage());
         }
